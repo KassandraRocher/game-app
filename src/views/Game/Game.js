@@ -2,6 +2,7 @@
 /* eslint-disable lit-a11y/click-events-have-key-events */
 import { LitElement, html, css } from 'lit';
 import { Router } from '@vaadin/router';
+import { handPaper, handRock, handScissors, signOut } from '../../../sources/constants.js'
 
 export class Game extends LitElement {
   static get styles() {
@@ -106,7 +107,7 @@ export class Game extends LitElement {
           <img
               
             alt="signOut"
-            src="https://astounding-yeot-4a117d.netlify.app/sources/sign-out-alt-solid.svg"
+            src="${signOut}"
             class="fas fa-sign-out-alt"
           />
         </div>
@@ -116,14 +117,14 @@ export class Game extends LitElement {
         <div class="background rock" @click=${() => this.chooseUser('rock')}>
           <img
             alt="handRock"
-            src="https://astounding-yeot-4a117d.netlify.app/sources/hand-rock-regular.svg"
+            src="${handRock}"
             class="far fa-hand-rock"
           />
         </div>
         <div class="background paper" @click=${() => this.chooseUser('paper')}>
         <img
             alt="handPaper"
-            src="https://astounding-yeot-4a117d.netlify.app/sources/hand-paper-regular.svg"
+            src="${handPaper}"
             class="far fa-hand-paper"
           />
         </div>
@@ -133,7 +134,7 @@ export class Game extends LitElement {
         >
         <img
             alt="handScissors"
-            src="https://astounding-yeot-4a117d.netlify.app/sources/hand-scissors-regular.svg"
+            src="${handScissors}"
             class="far fa-hand-scissors"
           />
         </div>

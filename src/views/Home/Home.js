@@ -1,6 +1,7 @@
 /* eslint-disable lit-a11y/click-events-have-key-events */
 import { LitElement, html, css } from 'lit';
 import { Router } from '@vaadin/router';
+import { mouse } from '../../../sources/constants.js'
 
 export class Home extends LitElement {
   static get styles() {
@@ -95,7 +96,7 @@ export class Home extends LitElement {
     return html`
       <div class="home">
         <div class="circle">
-          <img alt="mouse" src="https://astounding-yeot-4a117d.netlify.app/sources/mouse-solid.svg" class="fas fa-mouse"/>
+          <img alt="mouse" src="${mouse}" class="fas fa-mouse"/>
         </div>
         <p class="title">Create a new player</p>
         <div class="form">
