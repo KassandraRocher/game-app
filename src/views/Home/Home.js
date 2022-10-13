@@ -95,7 +95,7 @@ export class Home extends LitElement {
     return html`
       <div class="home">
         <div class="circle">
-          <img alt="mouse" src="../../../sources/mouse-solid.svg" class="fas fa-mouse"/>
+          <img alt="mouse" src="https://astounding-yeot-4a117d.netlify.app/sources/mouse-solid.svg" class="fas fa-mouse"/>
         </div>
         <p class="title">Create a new player</p>
         <div class="form">

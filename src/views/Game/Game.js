@@ -106,7 +106,7 @@ export class Game extends LitElement {
           <img
               
             alt="signOut"
-            src="../../../sources/sign-out-alt-solid.svg"
+            src="https://astounding-yeot-4a117d.netlify.app/sources/sign-out-alt-solid.svg"
             class="fas fa-sign-out-alt"
           />
         </div>
@@ -116,14 +116,14 @@ export class Game extends LitElement {
         <div class="background rock" @click=${() => this.chooseUser('rock')}>
           <img
             alt="handRock"
-            src="../../../sources/hand-rock-regular.svg"
+            src="https://astounding-yeot-4a117d.netlify.app/sources/hand-rock-regular.svg"
             class="far fa-hand-rock"
           />
         </div>
         <div class="background paper" @click=${() => this.chooseUser('paper')}>
         <img
             alt="handPaper"
-            src="../../../sources/hand-paper-regular.svg"
+            src="https://astounding-yeot-4a117d.netlify.app/sources/hand-paper-regular.svg"
             class="far fa-hand-paper"
           />
         </div>
@@ -133,7 +133,7 @@ export class Game extends LitElement {
         >
         <img
             alt="handScissors"
-            src="../../../sources/hand-scissors-regular.svg"
+            src="https://astounding-yeot-4a117d.netlify.app/sources/hand-scissors-regular.svg"
             class="far fa-hand-scissors"
           />
         </div>
