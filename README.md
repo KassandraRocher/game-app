@@ -7,4 +7,4 @@ Instrucciones
 
 *Iconos en la rama Deploy:
 
-Para poder mostrar los íconos en Netlify no me ha quedado otro remedio que poner las rutas que tengo en mi proyecto. Netlify no me detectaba la dependencia fa-icons, ni las rutas relativas.
+Para poder mostrar los íconos en Netlify no me ha quedado otro remedio que poner las rutas de Github que tengo en mi proyecto. Netlify no me detectaba la dependencia fa-icons, ni las rutas relativas.
