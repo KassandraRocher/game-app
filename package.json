@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "@vaadin/router": "^1.7.4",
-    "fa-icons": "^0.2.0",
     "lit": "^2.0.2",
     "sinon": "^14.0.1"
   },

@@ -1,7 +1,6 @@
 /* eslint-disable no-else-return */
 /* eslint-disable lit-a11y/click-events-have-key-events */
 import { LitElement, html, css } from 'lit';
-import 'fa-icons';
 import { Router } from '@vaadin/router';
 
 export class Game extends LitElement {
@@ -47,11 +46,16 @@ export class Game extends LitElement {
         font-size: 5vh;
         transition: background-color 1s;
       }
+      .paper {
+        padding: 1.3vh 2.5vh 1.3vh 2.5vh;
+      }
       .rock {
+        padding: 2vh;
         border-right: 0.5vh solid #5aa2e2;
         border-radius: 10px 0 0 10px;
       }
       .scissors {
+        padding: 2vh;
         border-left: 0.5vh solid #5aa2e2;
         border-radius: 0 10px 10px 0;
       }
@@ -71,12 +75,21 @@ export class Game extends LitElement {
         pointer-events: auto;
         cursor: not-allowed;
       }
+
+      .fa-sign-out-alt{
+        width: 1.3em;
+      }
+
+      .fa-hand-rock, .fa-hand-paper, .fa-hand-scissors{
+        width: 2em;
+        padding: 10px;
+      }
     `;
   }
 
   static get properties() {
     return {
-      score: { type: Number }
+      score: { type: Number },
     };
   }
 
@@ -90,22 +103,39 @@ export class Game extends LitElement {
       <div class="header">
         <div>Hi ${window.location.pathname.split('/').pop()}</div>
         <div class="sign-out" @click=${() => this.signOut()}>
-          <fa-icon class="fas fa-sign-out-alt" size="1.2em"></fa-icon>
+          <img
+              
+            alt="signOut"
+            src="../../../sources/sign-out-alt-solid.svg"
+            class="fas fa-sign-out-alt"
+          />
         </div>
       </div>
       <p class="score">Score: ${this.score}</p>
       <div class="hands">
         <div class="background rock" @click=${() => this.chooseUser('rock')}>
-          <fa-icon class="far fa-hand-rock" size="2em"></fa-icon>
+          <img
+            alt="handRock"
+            src="../../../sources/hand-rock-regular.svg"
+            class="far fa-hand-rock"
+          />
         </div>
         <div class="background paper" @click=${() => this.chooseUser('paper')}>
-          <fa-icon class="far fa-hand-paper" size="2em"></fa-icon>
+        <img
+            alt="handPaper"
+            src="../../../sources/hand-paper-regular.svg"
+            class="far fa-hand-paper"
+          />
         </div>
         <div
           class="background scissors"
           @click=${() => this.chooseUser('scissors')}
         >
-          <fa-icon class="far fa-hand-scissors" size="2em"></fa-icon>
+        <img
+            alt="handScissors"
+            src="../../../sources/hand-scissors-regular.svg"
+            class="far fa-hand-scissors"
+          />
         </div>
       </div>
       <p class="result"></p>

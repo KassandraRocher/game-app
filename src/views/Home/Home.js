@@ -1,6 +1,5 @@
 /* eslint-disable lit-a11y/click-events-have-key-events */
 import { LitElement, html, css } from 'lit';
-import 'fa-icons';
 import { Router } from '@vaadin/router';
 
 export class Home extends LitElement {
@@ -85,6 +84,10 @@ export class Home extends LitElement {
         cursor: pointer;
         margin-left: 9vw;
       }
+
+      img{
+        width: 2em;
+      }
     `;
   }
 
@@ -92,7 +95,7 @@ export class Home extends LitElement {
     return html`
       <div class="home">
         <div class="circle">
-          <fa-icon class="fas fa-mouse" size="2em"></fa-icon>
+          <img alt="mouse" src="../../../sources/mouse-solid.svg" class="fas fa-mouse"/>
         </div>
         <p class="title">Create a new player</p>
         <div class="form">
